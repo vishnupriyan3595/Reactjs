@@ -8,7 +8,8 @@ import React from 'react';
 
 import Home from './Home';
 import Login from './Login';
-
+import AboutUs from './AboutUs';
+import Contact from './Contact';
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
     <Route path="/" element={<Login/>} />
     <Route path="/home" element={<Home />} />
     <Route path="/login" element={<Login />} />
+    <Route path="/AboutUs" element={<AboutUs />} />
+    <Route path="/Contact" element={<Contact />} />
         </Routes>
 
         <ul>
@@ -26,6 +29,12 @@ function App() {
       </li>
       <li>
       <Link to='/login'>login</Link>
+      </li>
+      <li>
+      <Link to='/AboutUs'>AboutUs</Link>
+      </li>
+      <li>
+      <Link to='/Contact'>Contact</Link>
       </li>
 
     </ul>
